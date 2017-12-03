@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ExampleClass : MonoBehaviour
+public class Kamera : MonoBehaviour
 {
     public float horizontalSpeed = 2.0F;
     public float verticalSpeed = 2.0F;

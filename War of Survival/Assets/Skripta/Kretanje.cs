@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ExampleClass : MonoBehaviour
+public class Kretanje : MonoBehaviour
 {
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
