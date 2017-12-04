@@ -1,14 +1,23 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class Kamera : MonoBehaviour {
+	public GameObject target;
+	public float rotateSpeed = 5;
+	Vector3 offset;
 
-public class Kamera : MonoBehaviour
-{
-    public float horizontalSpeed = 2.0F;
-    public float verticalSpeed = 2.0F;
-    void Update()
-    {
-        float h = horizontalSpeed * Input.GetAxis("Mouse X");
-        float v = verticalSpeed * Input.GetAxis("Mouse Y");
-        transform.Rotate(v, h, 0);
-    }
+	void Start() {
+		offset = target.transform.position - transform.position;
+	}
+
+	void LateUpdate() {
+		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
+		target.transform.Rotate(0, horizontal, 0);
+
+		float desiredAngle = target.transform.eulerAngles.y;
+		Quaternion rotation = Quaternion.Euler(0, desiredAngle, 0);
+		transform.position = target.transform.position - (rotation * offset);
+
+		transform.LookAt(target.transform);
+	}
 }
