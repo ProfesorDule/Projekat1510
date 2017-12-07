@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scena/Scena1.unity
+- path: Assets/Third Person C.unity
   isLoaded: 1
   isActive: 1
