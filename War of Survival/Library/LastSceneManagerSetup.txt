@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scena/UI.unity
+- path: Assets/vilage.unity
   isLoaded: 1
   isActive: 1
