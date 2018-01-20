@@ -52,10 +52,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\EasyGrassSubstance\Example Scene\ObjectRotation.cs" />
+     <Compile Include="Assets\Pokret.cs" />
      <Compile Include="Assets\Scripts\CameraChange.cs" />
      <Compile Include="Assets\Scripts\CameraCollision.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\Kretanje.cs" />
      <Compile Include="Assets\Scripts\Slajd.cs" />
      <None Include="Assets\Nature pack\Materials\Standard.shader" />
      <None Include="Assets\EasyGrassSubstance\Documentation.txt" />
